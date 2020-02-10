@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alex Wang</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preload" href="space.jpg" as="image">
+        <link rel="preload" href="spaceblurred.jpg" as="image">
+        <link rel="preload" href="combined1.PNG" as="image">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+    <!--- Navbar --->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container-fluid">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded = "false" id="TOGGLE">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav"> 
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ABT">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#EDUC">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#PROJECTS">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#SKILL">Skills</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!---Jumbotron--->
+        <div class="jumbotron jumbotron-fluid" id="jumbo">
+            <div class="container-fluid" style="visibility:hidden;" id="delayed">
+                <div class="image" style= "text-align: center; padding-top: 60px;"> 
+                    <img src="combined1.PNG" class="rounded-circle p-3" style="width: 36.5vh;" alt="Avatar">
+                </div>
+                <h1 class="display-2 text-center text-white">{{title}}</h1>
+                <h2 class="display-5 text-center text-white" id="descrip" style="font-size: 25px;">{{description}}</h2>
+                <hr class="my-4 " width= "65%" style="background-color: white; text-align:center; margin: 0 auto; height: 2px;">
+                <div class="container-fluid" style="text-align: center; margin-top: 4vh; vertical-align: top; margin-bottom: 3.5vh;">
+                    <a href="https://github.com/alexzw7"><i class="fab fa-github" style="font-size:9vh;color:white;vertical-align: top; margin-right: 20px"></i></a>
+                    <a href="mailto:alexzw@umich.edu"><i class="fas fa-envelope" style="font-size:9vh;color:white;vertical-align: top; margin-left: 20px;"></i></a>
+                </div>
+                <div class="container-fluid" style="padding-top: 35px; padding-bottom: 0px;">
+                    <div id="section02" style="text-align: center; padding-left: 20px;" class="container-fluid">
+                        <a href="#ABT"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---Main Content--->
+        <div class="container-fluid bg-dark row-full"style="vertical-align: top; padding: 0;" id="MAINCONTAINER">
+            <div class = "shadow row-full" style="padding: 15px 0 15px 0; margin-bottom: 15px; text-align: center;">
+                <a href="javascript:void(0)" onclick="javascript:changeMode()"><i class="fas fa-moon" style="font-size:4vh;color:white;" id="MODE"></i></a>                
+            </div>
+            <div class= "container-fluid">
+            <div class= "row justify-content-center">
+                <section class= "col-lg-6 col-md-12 col-sm-12 col-xs-12 my-0 bg-dark text-white" style="vertical-align: top;" id="SUBCONTAINER">
+                    <div class="cont1" style="position:relative">
+                    <a id="ABT" style="position:absolute; top:-60px;"></a>
+                    <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px; padding-top: 10px;" id="ABOUT">About Me</h2>
+                    <hr class = "bg-white" id="SEP1">
+                    <p class="lead" style="font-size: 21px; margin-bottom: 5px;" id="ABOUTME">{{bio}}</p>
+                    </div>
+                    <div class="cont2" style="position:relative">
+                    <a id="EDUC" style="position:absolute; top:-60px;"></a>
+                    <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px;" id="EDU">Education</h2>
+                    <hr class = "bg-white" id="SEP2">
+                    <div class = "row" id="UM">
+                        <h2 class="h1-responsive font-weight-normal my-0 col-8 text-left" style="font-size: 23px; padding-left:0; padding-right:0;">University of Michigan Ann Arbor, College of LSA</h2>
+                        <h2 class="h1-responsive font-weight-normal my-0 col-4 text-right" style="font-size: 23px; padding-left:0; padding-right:0;">Sept. 2017—Present</h2>
+                    </div>
+                    <p class="lead" style="font-size: 21px; padding-bottom: 0px;" id="DEGREE">Bachelor of Science in Computer Science<br>Expected Graduation: May 2021<br>Cumulative GPA: {{gpa}}/4.00<br>{{coursework}}</p>
+                    <div class = "row" id="DELTA">
+                            <h2 class="h1-responsive font-weight-normal my-0 col-6 text-left" style="font-size: 23px; padding-left:0; padding-right:0;">Delta Community College</h2>
+                            <h2 class="h1-responsive font-weight-normal my-0 col-6 text-right" style="font-size: 23px; padding-left:0; padding-right:0;">Sept. 2016—April 2017</h2>
+                    </div>
+                    <p class="lead" style="font-size: 21px; padding-bottom: 0px;" id="DUAL">Dual Enrollment: Calculus II, Statistics<br>Cumulutive GPA: 4.00/4.00</p>
+                    <div class = "row" id="SASA">
+                            <h2 class="h1-responsive font-weight-normal my-0 col-6 text-left" style="font-size: 23px; padding-left:0; padding-right:0;">Saginaw Arts & Sciences Academy</h2>
+                            <h2 class="h1-responsive font-weight-normal my-0 col-6 text-right" style="font-size: 23px; padding-left:0; padding-right:0;">Sept. 2013—June 2017</h2>
+                    </div>
+                    <p class="lead" style="font-size: 21px;" id="HIGH">Cumulutive GPA: 3.81/4.00</p>
+                    </div>
+                    <div class="cont3" style="position:relative">
+                    <a id="PROJECTS" style="position:absolute; top:-60px;"></a>
+                    <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px;" id="PROJ">Projects</h2>
+                    <hr class ="bg-white" id="SEP3">
+                    {% for project in projects %}
+                    <div class = "row" id={{project.id | safe}}>
+                            <h2 class={{project.nameclass | safe}} style="font-size: 23px; padding-left:0; padding-right:0;">{{project.name}}</h2>
+                            <h2 class={{project.timeclass | safe}} style="font-size: 23px; padding-left:0; padding-right:0;">{{project.time}}</h2>
+                    </div>
+                    {% if project.hassummary == "yes" %}
+                    <p class="lead" style="font-size: 21px; padding-bottom: 0px;" id={{project.summaryid | safe}}>{{project.summary}}</p>
+                    {% endif %}
+                    {% if project.haslist == "yes" %}
+                    <ul class="lead" style="font-size: 21px; padding-bottom: 0px;" id={{project.listid | safe}}>
+                        {% for bullet in project.list %}
+                        <li>{{bullet.point}}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% endfor %}
+                    </div>
+                    <div class="cont4" style="position:relative">
+                    <a id="SKILL" style="position:absolute; top:-60px;"></a>
+                    <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px; padding-top: 5px;" id="SKILLS">Skills</h2>
+                    <hr class = "bg-white" id="SEP4">
+                    <h3 class="h1-responsive font-weight-bold my-0" style="font-size: 21px;" id="LANGS">Languages:</h3>
+                    <p class="lead" style="font-size: 21px; padding-bottom: 0px;" id="LANGUAGES">{{languages}}</p>
+                    <h3 class="h1-responsive font-weight-bold my-0" style="font-size: 21px;" id="SOFT">Software:</h3>
+                    <p class="lead" style="font-size: 21px; padding-bottom: 0px;" id="TECH">{{software}}</p>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </div>
+        <!---Footer--->
+        <footer style="background-color: black; padding: 30px 0px 30px 0px; margin-bottom: 0px;">
+            <div class="container-fluid text-center">
+                <p class="lead" style="font-size: 20px; color: white; margin: 0px;">Copyright © 2020 Alex Wang</p>
+            </div>
+        </footer>
+    </body>
+    <script src="https://kit.fontawesome.com/9dba17bb37.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"> </script>
+</html>

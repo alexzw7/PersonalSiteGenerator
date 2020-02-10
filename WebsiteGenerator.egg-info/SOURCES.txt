@@ -1,0 +1,9 @@
+setup.py
+WebsiteGenerator/__init__.py
+WebsiteGenerator/__main__.py
+WebsiteGenerator.egg-info/PKG-INFO
+WebsiteGenerator.egg-info/SOURCES.txt
+WebsiteGenerator.egg-info/dependency_links.txt
+WebsiteGenerator.egg-info/entry_points.txt
+WebsiteGenerator.egg-info/requires.txt
+WebsiteGenerator.egg-info/top_level.txt

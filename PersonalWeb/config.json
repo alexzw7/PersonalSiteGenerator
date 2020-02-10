@@ -1,0 +1,72 @@
+[
+    {
+        "url": "/",
+        "template": "index.html",
+        "context": {
+            "title" : "Hi. I'm Alex Wang:",
+            "description" : "a passionate programmer and problem solver currently living in Ann Arbor, MI.",
+            "bio" : "Hi! My name is Alex Wang. I am currently a third year student studying Computer Science at the University of Michigan. Prior to studying at Ann Arbor, I had barely written a single line of code. In fact, I barely even understood how powerful code was. However, everything changed once I arrived at Michigan. After taking the introductory programming course in my first year in college, I quickly realized that programming was, and still is, something I enjoyed doing. I find satisfaction in solving challenges through completing projects, and I have always put forth the time and effort to ensure everything I do is of high quality. Outside of programming, some of my favorite hobbies include playing video games, watching NBA and NFL games, and playing basketball and ping pong.",
+            "gpa" : "3.68",
+            "coursework" : "Coursework: Data Structures and Algorithms, Web Systems, Data Management Systems, Intro to Computer Security, Intro to Computer Organization, Foundations of Computer Science, Discrete Math",
+            "projects" : [
+                {
+                    "id" : "\"IOSTEAM\"",
+                    "nameclass" : "\"h1-responsive font-weight-normal my-0 col-6 text-left\"",
+                    "timeclass" : "\"h1-responsive font-weight-normal my-0 col-6 text-right\"",
+                    "name" : "PhotoAssasin",
+                    "time" : "Sept. 2019—Now",
+                    "hassummary" : "yes",
+                    "summaryid" : "\"APP\"",
+                    "summary" : "Coordinated with other iOS team members within the Michigan Hackers organization to develop a cohesive, gamified app using Swift, Google Firebase, Cocoapods, and UIKit.",
+                    "haslist" : "yes",
+                    "listid" : "\"PHOTO\"",
+                    "list" : [
+                        {
+                            "point" : "App involves rounds of discretely taking pictures of opponents to avoid elimination"
+                        },
+                        {
+                            "point" : "Ongoing application implementation since previous year"
+                        },
+                        {
+                            "point" : "Designed and implemented a functional notifications screen with several options turned on and off separately or all at once"
+                        },
+                        {
+                            "point" : "Implemented user notifications as a locally saved setting"
+                        }
+                    ]
+                },
+                {
+                    "id" : "\"WEBSITE\"",
+                    "nameclass" : "\"h1-responsive font-weight-normal my-0 col-6 text-left\"",
+                    "timeclass" : "\"h1-responsive font-weight-normal my-0 col-6 text-right\"",
+                    "name" : "Personal Website",
+                    "time" : "Nov. 2019",
+                    "hassummary": "yes",
+                    "summaryid" : "\"SITEINFO\"",
+                    "summary" : "I created this personal portfolio website using HTML/CSS, Bootstrap, Javascript, JQuery, and Font Awesome. The site is full functional and still being constantly optimized. It is generated using Python with templates and Jinja, and the generator code can be found on my GitHub.",
+                    "haslist" : "no"
+                },
+                {
+                    "id": "\"MST\"",
+                    "nameclass" : "\"h1-responsive font-weight-normal my-0 col-8 text-left\"",
+                    "timeclass" : "\"h1-responsive font-weight-normal my-0 col-4 text-right\"",
+                    "name" : "Coordinate Path Finder (Data Structures and Algorithms, EECS 281)",
+                    "time" : "April 2019",
+                    "hassummary" : "no",
+                    "haslist" : "yes",
+                    "listid" : "\"P4\"",
+                    "list" : [
+                        {
+                            "point" : "Coded and used Prim's algorithm to create a Minimum Spanning Tree connecting a given set of cartesian coordinates under certain conditions"
+                        },
+                        {
+                            "point" : "Developed a fast Branch and Bound algorithm and used Arbitrary Insertion heuristic to produce a near-optimal and optimal solution to the Traveling Salesman Problem (visit all the coordinates and return to the first point while minimizing distance traveled), passing all the instructor's rigorous public and private tests and producing a top score in the class"
+                        }
+                    ]
+                }
+            ],
+            "languages" : "C++, C, Python, Javascript, HTML/CSS, SQL, Swift, Bash",
+            "software" : "Xcode, Visual Studio, PyCharm, Git, Microsoft Office Suite"
+        }
+    }
+]
