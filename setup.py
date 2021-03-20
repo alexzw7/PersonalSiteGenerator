@@ -12,7 +12,7 @@ setup(
     install_requires=[
         'bs4==0.0.1',
         'click==7.0',
-        'jinja2==2.10.3',
+        'jinja2==2.11.3',
         'requests==2.22.0',
         'sh==1.12.14',
     ],
